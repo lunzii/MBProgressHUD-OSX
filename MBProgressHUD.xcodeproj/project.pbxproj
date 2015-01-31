@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C8F217161A7B21A100EA8BC5 /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F2170A1A7B21A100EA8BC5 /* libMBProgressHUD.a */; };
-		C8F217281A7B22CF00EA8BC5 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = C8F217261A7B22CF00EA8BC5 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8F217281A7B22CF00EA8BC5 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = C8F217261A7B22CF00EA8BC5 /* MBProgressHUD.h */; };
 		C8F217291A7B22CF00EA8BC5 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F217271A7B22CF00EA8BC5 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
@@ -291,7 +291,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_STRIP = NO;
 			};
 			name = Debug;
 		};
@@ -299,7 +301,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_STRIP = NO;
 			};
 			name = Release;
 		};
